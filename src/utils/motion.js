@@ -1,4 +1,4 @@
-export const headerVariants = {
+export const headerVariants = { //defines motion for header animation
   hidden: {
     opacity: 0,
     y: -50,
@@ -56,7 +56,7 @@ export const textVariant = (delay) => ({
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 1.25,
+      duration: 1.5,
       delay,
     },
   },

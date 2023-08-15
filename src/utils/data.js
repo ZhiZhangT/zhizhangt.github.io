@@ -23,7 +23,8 @@ export const projectExperience = [
 ];
 
 export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
+  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business."
+  ,
   "We use process design to create digital products. Besides that also help their business",
 ];
 
@@ -119,7 +120,7 @@ export const comments = [
 
 export const sliderSettings = {
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1,
