@@ -55,6 +55,7 @@ const Header = () => {
                         className={`flexCenter ${css.menu}`}
                         ref={menuRef}
                         >
+                            <li className={css.title}><a href="">zhizhang.tee</a></li>
                             <li><a href="#education">Education</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#experience">Experience</a></li>

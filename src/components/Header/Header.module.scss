@@ -59,6 +59,14 @@
             gap: 1.5rem;
             cursor: pointer;
 
+            .title{
+                text-transform: none;
+                font-size: 1.4rem;
+                padding-bottom: 3px;
+                color: black;
+                
+            }
+
             li{
                 a{
                     color: inherit;

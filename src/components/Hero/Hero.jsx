@@ -38,9 +38,11 @@ const Hero = () => {
             <motion.div 
             variants={fadeIn("up", "tween", 0.3, 1)}
             className={css.person}>
+
                 <motion.img
-                variants={slideIn("up", "tween", 0.5, 1.3)}
-                 src='./person.png' alt="profile pic"/>
+                variants={fadeIn("left", "tween", 0.5, 1.5)}
+                 src='./profilepic.png' alt="profile pic"/>
+
             </motion.div>
 
             <div className={css.description}>
