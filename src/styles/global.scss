@@ -109,6 +109,17 @@
   }
   font-size: 3rem;
   font-weight: bold;
+  word-spacing: 0.4rem;
+}
+
+.primaryText2 {
+  @media (max-width: $sm) {
+    font-size: 2rem;
+  }
+  margin-top: 6rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  word-spacing: 0.4rem;
 }
 
 .secondaryText {

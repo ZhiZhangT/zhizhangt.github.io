@@ -3,6 +3,7 @@ import css from './Hero.module.scss'
 import { motion } from 'framer-motion'
 import { staggerContainer } from '../../utils/motion'
 import { fadeIn, slideIn } from '../../utils/motion'
+import { BiBookHeart } from 'react-icons/bi'
 
 const Hero = () => {
   return (
@@ -19,17 +20,17 @@ const Hero = () => {
                 variants={fadeIn("right", "tween", 0.2, 1)} // fade in from right, animation type of tween, delay of 0.2 seconds, duration of 1 second.
                 className='primaryText'>
 
-                Hey There, <br/> 
-                I'm Brinjan
+                Hey there, <br/> 
+                I am Zhi Zhang
 
                 </motion.span>
 
                 <motion.span
                 variants={fadeIn("left", "tween", 0.4, 1)}
-                className='secondaryText'>
+                className='primaryText2'>
 
-                I design beautiful simple <br/>
-                things, And I love what I document
+                Welcome to <br/>
+                My Website!
 
                 </motion.span>
             </div>
@@ -42,20 +43,26 @@ const Hero = () => {
                  src='./person.png' alt="profile pic"/>
             </motion.div>
 
-            <a className={css.email} href="mailto:zztee24@gmail.com">zztee24@gmail.com</a>
+            <div className={css.description}>
+                <a>Here, you will find bits and pieces about me... </a>
+                
+                <a>if you think I'm interesting, </a>
+                <a>Contact Me!</a>
+            </div>
 
             <div className={css.lowerElements}>
                 <div className={css.experience}>
-                    <div className="primaryText">10</div>
+                    <div className="primaryText">24</div>
                     <div className="secondaryText">
                         <div>Years</div>
-                        <div>Experience</div>
+                        <div>Old</div>
                     </div>
                 </div>
                 <div className={css.certificate}>
-                    <img src="./certificate.png" alt="Certificate"/>
-                    <span>CERTIFIED PROFESSIONAL</span>
-                    <span>UI/UX DESIGNER</span>
+                    <BiBookHeart size='60' />
+                    <span className='secondaryText'>Data & AI</span>
+                    <span className='secondaryText'>Product Management</span>
+                    <span className='secondaryText'> Software Development</span>
                 </div>
             </div>
         </motion.div>

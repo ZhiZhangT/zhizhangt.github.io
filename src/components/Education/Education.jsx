@@ -1,6 +1,6 @@
 import React from 'react'
 import { projectExperience, WhatDoIHelp } from '../../utils/data'
-import css from '../Expertise/Expertise.module.scss'
+import css from './Education.module.scss'
 import { motion } from 'framer-motion'
 import { staggerChildren, staggerContainer, fadeIn, textVariant } from '../../utils/motion'
 
@@ -13,7 +13,7 @@ const Expertise = () => {
     viewport={{once:false, amount: 0.25}}
     className={css.wrapper}>
 
-        <a className='anchor' id="expertise"></a>
+        <a className='anchor' id="education"></a>
         <div className={` paddings yPaddings flexCenter innerWidth ${css.container}`}>
 
             <div className={css.leftSide}>

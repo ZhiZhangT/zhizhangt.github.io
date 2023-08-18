@@ -12,7 +12,7 @@ const Portfolio = () => {
     viewport={{once: false, amount: 0.25}}
     className={`paddings ${css.wrapper}`}>
 
-        <a className='anchor' id="portfolio"></a>
+        <a className='anchor' id="projects"></a>
         <div className={`innerWidth flexCenter ${css.container}`}>
             
             <motion.div variants={textVariant(0.4)} className={`flexCenter ${css.heading}`}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import css from './Works.module.scss'
+import css from './Experience.module.scss'
 import { motion } from 'framer-motion'
 import { staggerChildren, textVariant2, zoomIn, fadeIn } from '../../utils/motion'
 import { workExp } from '../../utils/data'
@@ -13,7 +13,7 @@ const Works = () => {
     viewport={{once: false, amount: 0.25}}
     className={` paddings ${css.wrapper}`}>
 
-        <a className='anchor' id="work"></a>
+        <a className='anchor' id="experience"></a>
         <div className={`flexCenter innerWidth ${css.container}`}>
             <span className='primaryText yPaddings'>My Work Experience</span>
 

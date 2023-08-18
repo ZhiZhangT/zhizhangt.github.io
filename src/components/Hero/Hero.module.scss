@@ -82,17 +82,28 @@
             }
         }
 
-        .email{
+        .description{
 
             @media (max-width: $sm) {
                 position: relative;
                 display: none;
             }
 
+            display: block;
+            max-width: 18rem;
+            font-size: 1.2rem;
+            word-spacing: 2.5px;
             position: absolute;
-            top: 50%;
             left: 0;
-            color: orange;
+            color: secondaryText;
+
+            .description1{
+                top: 50%
+            }
+
+            .description2{
+                top: 60%
+            }
         }
     }
 }
