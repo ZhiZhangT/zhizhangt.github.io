@@ -1,31 +1,46 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
-export const projectExperience = [
+export const educationTimeline = [
   {
-    name: "Website Design",
-    projects: 76,
-    icon: HiOutlineDesktopComputer,
+    name: "Singapore University of Technology and Design",
+    qual:"BE (Hons) in Computer Science",
+    time: "2020 - 2025",
+    icon: "sutdlogo.png",
+    iconalt: "SUTD logo",
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
-    projects: 63,
-    icon: CiMobile1,
+    name: "Zhejiang University, School of Management",
+    qual:"MS (Hons) in Technology Entreprenuership",
+    time: "Sep 2023 - Jan 2024",
+    icon: "zhejianglogo.png",
+    iconalt: "Zhejiang logo",
+    bg: "#F26440",
+  },
+  {
+    name: "University of California Berkeley, Extension",
+    qual:"MS (Hons) in Technology Entreprenuership",
+    time: "Jan 2023 - May 2023",
+    icon: "ucblogo.png",
+    iconalt: "UCB logo",
     bg: "#EEC048",
   },
   {
-    name: "Brand Identity",
-    projects: 47,
-    icon: MdWorkspacesOutline,
+    name: "Hwa Chong Institution",
+    qual:"GCE A' Levels",
+    time: "2016 - 2017",
+    icon: "hwachonglogo.png",
+    iconalt: "HCI logo",
     bg: "#F26440",
-  },
+  }
 ];
 
-export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business."
+export const AboutMyEducation = [
+  "I am a scholar under the SUTD Technology Entrepreneurship Programme (STEP), a 5-year program that is giving me opportunities to study in the West- USA and East- China, while pursuing a Bachelor's and Master's degrees concurrently. I am also the inaugural recipient of the Shopee-SUTD Scholarship."
   ,
-  "We use process design to create digital products. Besides that also help their business",
+  "My research interests revolve around realizing the potentials of AI and Big Data in the real world. I am currently writing a thesis paper on how a data marketplace can be created where consumers can control and monetize access to their personal data, using a federated machine learning architecture.",
+  "I'm currently looking for an internship opportunity in the Summer of 2024, as a Software Engineer or Product Mananger in the Tech space.",
 ];
 
 export const workExp = [
