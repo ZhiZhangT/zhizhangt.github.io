@@ -3,6 +3,7 @@ import css from './Experience.module.scss'
 import { motion } from 'framer-motion'
 import { staggerChildren, textVariant2, zoomIn, fadeIn } from '../../utils/motion'
 import { workExp } from '../../utils/data'
+import Flipcard from '../Flipcard/Flipcard'
 
 const Works = () => {
   return (
@@ -10,7 +11,7 @@ const Works = () => {
     variants={staggerChildren}
     initial="hidden"
     whileInView="show"
-    viewport={{once: false, amount: 0.25}}
+    viewport={{once: true, amount: 0.25}}
     className={` paddings ${css.wrapper}`}>
 
         <a className='anchor' id="experience"></a>
@@ -23,17 +24,9 @@ const Works = () => {
                     workExp.map((exp, i) => {
                         return <motion.div
                         variants={textVariant2}
-                        className={`flexCenter ${css.exp}`} key={i}>
+                        className={`flexCenter`} key={i}>
                             
-                            <div className={css.post}>
-                                <h1>{exp.place}</h1>
-                                <p>{exp.tenure}</p>
-                            </div>
-
-                            <div className={css.role}>
-                                <h1>{exp.role}</h1>
-                                <p>{exp.detail}</p>
-                            </div>
+                            <Flipcard place={exp.place} image={exp.image} tenure={exp.tenure} role={exp.role} detail={exp.detail}/>
                         </motion.div>
                     })
                 }
@@ -43,9 +36,11 @@ const Works = () => {
                 className={css.progressbar}>
 
                     <motion.div variants={fadeIn("down", "tween", 2, 1.5)} className={css.line}></motion.div>
-                    <div><div className={css.circle} style={{background: "#286F6C"}}></div></div>
-                    <div><div className={css.circle} style={{background: "#F2704E"}}></div></div>
-                    <div><div className={css.circle} style={{background: "#EEC048"}}></div></div>
+                    <div><div className={css.circle} style={{background: "#1a3849"}}></div></div>
+                    <div><div className={css.circle} style={{background: "#019c62"}}></div></div>
+                    <div><div className={css.circle} style={{background: "#EE4D2D"}}></div></div>
+                    <div><div className={css.circle} style={{background: "#7b644b"}}></div></div>
+                    <div><div className={css.circle} style={{background: "#aa070c"}}></div></div>
                 </motion.div>
             </div>
 

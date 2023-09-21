@@ -17,11 +17,11 @@ const Portfolio = () => {
             
             <motion.div variants={textVariant(0.4)} className={`flexCenter ${css.heading}`}>
                 <div>
-                    <span className='primaryText'>My  Latest Works</span>
-                    <p style={{marginTop: "10px"}}>Perfect Solution for Digital Experience!</p>
+                    <span className='primaryText'>My  Projects</span>
+                    <p style={{marginTop: "10px"}}>includes Personal, School, and Hackathon work!</p>
                 </div>
 
-                <span className='secondaryText'>Explore More Works</span>
+                <a className='secondaryText' href="https://github.com/ZhiZhangT"  target="_blank">Check out My GitHub</a>
             </motion.div>
 
             <div className={`flexCenter ${css.showcase}`}>
