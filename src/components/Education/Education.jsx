@@ -3,6 +3,7 @@ import { educationTimeline, AboutMyEducation } from '../../utils/data'
 import css from './Education.module.scss'
 import { motion } from 'framer-motion'
 import { staggerChildren, staggerContainer, fadeIn, textVariant } from '../../utils/motion'
+import MDRenderer from '../MDRenderer/MDRenderer'
 
 const Expertise = () => {
   return (
@@ -43,7 +44,9 @@ const Expertise = () => {
             className={css.rightSide}>
                 {
                 AboutMyEducation.map((paragraph, i) => {
-                    return <span className='secondaryText' key={i}> {paragraph} </span>
+                    return <div className='secondaryText'>
+                                <MDRenderer key={i} markdownContent={paragraph} />
+                            </div>
                 })
                 }
             </motion.div>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import css from './Flipcard.module.scss'
+import MDRenderer from '../MDRenderer/MDRenderer'
 
 const Flipcard = (props) => {
 
@@ -30,7 +31,9 @@ const Flipcard = (props) => {
                     <div className={css.header}> My Responsibilities:</div>
 
                     <div className={css.body}>
-                        <span className={css.description}>{props.detail}</span>
+                        <div className={css.description}>
+                            <MDRenderer markdownContent={props.detail}/>
+                        </div>
                     </div>
                 </div>
             </div>
