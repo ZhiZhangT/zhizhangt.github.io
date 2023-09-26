@@ -17,7 +17,7 @@
                 width: 100%;
                 justify-content: space-between;
                 line-height: 40px;
-                align-items: flex-start;
+                align-items: center;
 
                 >div {
                     flex: 1;
@@ -29,6 +29,9 @@
             }
         
             .progressbar {
+                @media (max-width: $sm) {
+                    display: none;
+                }
                 position: absolute;
                 height: 108%;
                 display: flex;
@@ -38,6 +41,7 @@
                 left: 3%;
 
                 .line {
+
                     position: absolute;
                     height: 92%;
                     width: 2px;

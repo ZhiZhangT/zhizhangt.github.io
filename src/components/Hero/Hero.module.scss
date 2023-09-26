@@ -8,7 +8,7 @@
 
         .upperElements {
 
-            @media (max-width: $sm) {
+            @media (max-width: $md) {
                 justify-content: center;
                 text-align: center;
                 gap: 2rem;
@@ -90,7 +90,7 @@
 
         .description{
 
-            @media (max-width: $sm) {
+            @media (max-width: $md) {
                 position: relative;
                 display: none;
             }
