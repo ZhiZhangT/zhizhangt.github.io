@@ -57,7 +57,6 @@
             font-size: 1rem;
             list-style: none;
             gap: 1.5rem;
-            cursor: pointer;
 
             .title{
                 text-transform: none;
@@ -75,25 +74,6 @@
 
                 &:hover {
                     color: $secondary;
-                }
-            }
-
-            .contact{
-                gap: 1.2rem;
-                flex-wrap: wrap;
-                justify-content: left;
-
-                svg{
-                    @media(max-width: $md) {
-                        display: none;
-                    }
-
-                    color: $secondary;
-                    left: 0;
-                    padding: 5px;
-                    background: white;
-                    border-radius: 999px;
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
                 }
             }
         }

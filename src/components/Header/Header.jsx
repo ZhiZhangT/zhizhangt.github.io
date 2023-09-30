@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect} from 'react'
 import css from './Header.module.scss'
-import {BiMenuAltRight, BiMessageAltDetail} from 'react-icons/bi'
+import {BiMenuAltRight} from 'react-icons/bi'
 import {motion} from 'framer-motion'
 import { getMenuStyles, headerVariants } from '../../utils/motion'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
 import useOutsideAlerter from '../../hooks/useOutsideAlerter'
+import ContactDropdown from '../ContactDropdown/ContactDropdown'
 
 const Header = () => {
 
     // controls menu button open/close when screen is small
-    const [menuOpened, setMenuOpened] = useState(false);
+    const [menuOpened, setMenuOpened] = useState(true);
     const headerShadow = useHeaderShadow();
     const menuRef = useRef();
 
@@ -19,9 +20,9 @@ const Header = () => {
             setMenuOpened
         }
     )
+    
 
     // makes header background opaque after scrolling
-
     const [scrolling, setScrolling] = useState(false);
 
     const handleScroll = () => {
@@ -61,8 +62,7 @@ const Header = () => {
                             <li><a href="#experience">Experience</a></li>
                             <li><a href="#people">Testimonials</a></li>
                             <li className={`flexCenter ${css.contact}`}>
-                            <p>Contact Me!</p>
-                            <BiMessageAltDetail size={"35px"} />
+                            <ContactDropdown/>
                             </li>
                         </ul>
 
