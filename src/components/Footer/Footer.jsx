@@ -1,7 +1,10 @@
 import React from "react";
 import { footerVariants, staggerChildren } from "../../utils/motion";
 import css from "./Footer.module.scss";
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
+import ContactDropdown from "../ContactDropdown/ContactDropdown";
+import MDRenderer from '../MDRenderer/MDRenderer';
+
 const Footer = () => {
   return (
     <motion.section
@@ -17,27 +20,35 @@ const Footer = () => {
       className={`innerWidth yPaddings flexCenter ${css.container}`}>
         <div className={css.left}>
           <span className="primaryText">
-            Let's make something <br />
-            amazing together.
+            Let's get in touch
+            and achieve amazing things together.
           </span>
-          <span className="primaryText">
-            Start by <a href="mailto:zztee24@gmail.com">saying hi</a>
+          <span className="primaryText2">
+            Start by <a href="https://www.linkedin.com/in/zhizhangtee/" target="_blank">connecting!</a>
           </span>
+          
         </div>
 
         <div className={css.right}>
           <div className={css.info}>
-            <span className="secondaryText">Information</span>
-            <p>145 New York, FL 5467, USA</p>
+            <span className="secondaryText">About my...</span>
           </div>
           <ul className={css.menu}>
-            <li> <a href="#expertise">Services</a></li>
-            <li> <a href="#works">Experience</a></li>
-            <li> <a href="#portfolio">Portfolio</a></li>
-            <li> <a href="#people">Reviews</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><ContactDropdown/></li>
           </ul>
         </div>
+        
       </motion.div>
+
+      <div className={css.bottom}>
+          <p className={css.footer}>Credits to ZAINKEEPSCODE's {' '}<a href="https://www.youtube.com/watch?v=Pu9I33nDeBk" target="_blank">YouTube tutorial</a>{' '}which I learned from and followed along at the start of this project.</p>
+          <br/>
+          <p className={css.footer}>© 2023 Tee Zhi Zhang, Singapore</p>
+      </div>
+
     </motion.section>
   );
 };

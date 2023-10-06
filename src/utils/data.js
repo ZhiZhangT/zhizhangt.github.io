@@ -102,6 +102,13 @@ export const workExp = [
 
 export const projects = [
   {
+    project: "MePart",
+    image: "./mepart.png",
+    link: "https://github.com/ZhiZhangT/cal-AI-hacks23",
+    role: "Full Stack + ML Developer",
+    achievement: "For CalHacks AI Hackathon", 
+  },
+  {
     project: "Expanding Access to the Affordable Connectivity Program",
     image: "./pcsberkeley.jpg",
     link: "https://medium.com/@pcsberkeley/invisible-health-impacts-of-covid-telehealth-and-the-acp-c53d957bf364",

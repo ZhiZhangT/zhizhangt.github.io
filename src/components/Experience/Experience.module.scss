@@ -1,11 +1,11 @@
 @import '../../styles/contants.scss';
 
 .wrapper{
-    background-color: rgb(180, 207, 255);
+    background-color: primaryColor;
 
     .container{
         flex-direction: column;
-        //gap: 2rem;
+        margin-bottom: 7rem;
 
         .experience{
             width:100%;
@@ -43,7 +43,7 @@
                 .line {
 
                     position: absolute;
-                    height: 92%;
+                    height: 93%;
                     width: 2px;
                     background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
                     background-position: right;

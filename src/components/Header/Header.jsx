@@ -60,7 +60,6 @@ const Header = () => {
                             <li><a href="#education">Education</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#experience">Experience</a></li>
-                            <li><a href="#people">Testimonials</a></li>
                             <li className={`flexCenter ${css.contact}`}>
                             <ContactDropdown/>
                             </li>
