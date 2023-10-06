@@ -17,7 +17,6 @@ const App = () => {
     <Education/>
     <Portfolio/>
     <Experience/>
-    <Cards/>
     <Footer/>
   </div> //using the modular aspect of scss, have to declare the stylesheet in a parent div
 };

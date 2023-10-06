@@ -16,8 +16,8 @@ const Works = () => {
 
         <a className='anchor' id="experience"></a>
         <div className={`flexCenter innerWidth ${css.container}`}>
-            <span className='primaryText yPaddings'>My Work Experience</span>
-
+            <span className='primaryText'>My Work Experience</span>
+            <span style={{marginTop: "2rem"}}>Click each card to flip it and learn more about what I did!</span>
             <div className={`flexCenter ${css.experience}`}>
 
                 {

@@ -1,6 +1,3 @@
-import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { CiMobile1 } from "react-icons/ci";
-import { MdWorkspacesOutline } from "react-icons/md";
 export const educationTimeline = [
   {
     name: "Singapore University of Technology and Design",
@@ -40,7 +37,7 @@ export const AboutMyEducation = [
   "I am a scholar under the [SUTD Technology Entrepreneurship Programme (STEP)](https://www.sutd.edu.sg/step), a 5-year program that is giving me opportunities to study in the West- USA and East- China, while pursuing a Bachelor's and Master's degrees concurrently. I am also the inaugural recipient of the [Shopee-SUTD Scholarship](https://www.sutd.edu.sg/Admissions/Undergraduate/Scholarship/Shopee-SUTD-Scholarship)."
   ,
   "My research interests revolve around realizing the potentials of **AI and Big Data** in the real world. I am currently writing a thesis paper on how a data marketplace can be created where consumers can control and monetize access to their personal data, using a federated machine learning architecture.",
-  "**I'm currently looking for an internship opportunity in the Summer of 2024, as a Software Engineer or Product Mananger in the Tech space.**",
+  "**I'm currently looking for an internship opportunity in the Summer of 2024, as a Product Mananger or Software Engineer in the Tech space.**",
 ];
 
 export const workExp = [
@@ -102,6 +99,51 @@ export const workExp = [
 `      
   },
 ];
+
+export const projects = [
+  {
+    project: "Expanding Access to the Affordable Connectivity Program",
+    image: "./pcsberkeley.jpg",
+    link: "https://medium.com/@pcsberkeley/invisible-health-impacts-of-covid-telehealth-and-the-acp-c53d957bf364",
+    role: "Data Analyst + Researcher",
+    achievement: "Adopted by Link-Health", 
+  },
+  {
+    project: "Hotel Go Where",
+    image: "hotelgowhere.jpeg",
+    link: "https://github.com/ZhiZhangT/HotelGoWhere",
+    role: "Full Stack Developer",
+    achievement: "",
+  },
+  {
+    project: "HawkerGO!",
+    image: "hawkergo.jpeg",
+    link: "https://github.com/brycegoh/HawkerGO",
+    role: "Android Developer + Data Engineer",
+    achievement: "",
+  },
+  {
+    project: "Lights Out",
+    image: "lightsout.png",
+    link: "https://github.com/dellebew/50.002-1D-LightsOutGame",
+    role: "Hardware Engineer",
+    achievement: "",
+  },
+  {
+    project: "NinjaClans",
+    image: "ninjaclans.png",
+    link: "https://github.com/kaine119/code-dojo-2022",
+    role: "Product Manager + Backend Engineer",
+    achievement: "1st Runner-Up for Ninja Van Code Dojo Hackathon ",
+  },
+  {
+    project: "Alleviate",
+    image: "alleviate.png",
+    link: "https://www.figma.com/file/bwp0PeSGzmenbiRJ1AyUKB/Alleviate-App?node-id=335%3A23403",
+    role: "Product Manager",
+    achievement: "Audience's Choice Award for Beyond Health Hackathon",
+  },
+]
 
 export const comments = [
   {
