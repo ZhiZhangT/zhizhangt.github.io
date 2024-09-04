@@ -4,6 +4,7 @@ import { fadeIn, staggerChildren, textVariant } from '../../utils/motion'
 import { motion } from 'framer-motion'
 import { projects } from '../../utils/data'
 import ProjectCard from '../ProjectCard/ProjectCard'
+import { handleSocialClick } from '../../utils/analytics_calls'
 
 const Portfolio = () => {
 
@@ -13,7 +14,7 @@ const Portfolio = () => {
         variants={staggerChildren}
         initial="hidden"
         whileInView="show"
-        viewport={{once: false, amount: 0.25}}
+        viewport={{once: false, amount: 0.1}}
         className={`paddings ${css.wrapper}`}>
 
             <a className='anchor' id="projects"></a>
@@ -25,14 +26,14 @@ const Portfolio = () => {
                         <p style={{marginTop: "10px"}}>Click to find out more about my Personal, School, and Hackathon work!</p>
                     </div>
 
-                    <a className='secondaryText' href="https://github.com/ZhiZhangT"  target="_blank">Check out My GitHub</a>
+                    <a className='secondaryText' href="https://github.com/ZhiZhangT"  target="_blank" onClick={() => handleSocialClick("GitHub")}>Check out My GitHub </a>
                 </motion.div>
 
                 <div className={`flexCenter ${css.showcase}`}>
 
                     {projectData.map((project,i) => {
                         return (
-                                <ProjectCard name={project.project} link={project.link} image={project.image} achievement={project.achievement} role={project.role}/>
+                                <ProjectCard name={project.project} link={project.link} image={project.image} achievement={project.achievement} role={project.role} key={i}/>
                         )
                     }) }
                 </div>

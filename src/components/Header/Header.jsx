@@ -6,6 +6,7 @@ import { getMenuStyles, headerVariants } from '../../utils/motion'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
 import useOutsideAlerter from '../../hooks/useOutsideAlerter'
 import ContactDropdown from '../ContactDropdown/ContactDropdown'
+import { handleNavClick } from '../../utils/analytics_calls'
 
 const Header = () => {
 
@@ -56,10 +57,10 @@ const Header = () => {
                         className={`flexCenter ${css.menu}`}
                         ref={menuRef}
                         >
-                            <li className={css.title}><a href="#">zhizhang.tee</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#experience">Experience</a></li>
+                            <li className={css.title}><a href="#" onClick={() => handleNavClick("top")}>zhizhang.tee</a></li>
+                            <li><a href="#education" onClick={() => handleNavClick("education")}>Education</a></li>
+                            <li><a href="#projects" onClick={() => handleNavClick("projects")}>Projects</a></li>
+                            <li><a href="#experience" onClick={() => handleNavClick("experience")}>Experience</a></li>
                             <li className={`flexCenter ${css.contact}`}>
                             <ContactDropdown/>
                             </li>

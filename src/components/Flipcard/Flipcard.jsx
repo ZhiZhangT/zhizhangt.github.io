@@ -1,15 +1,21 @@
 import React, {useState} from 'react';
 import css from './Flipcard.module.scss'
 import MDRenderer from '../MDRenderer/MDRenderer'
+import ReactGA from "react-ga4";
 
 const Flipcard = (props) => {
 
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleCardClick = () => {
-        console.log("click")
+        // console.log("click");
         setIsFlipped(!isFlipped);
-        console.log(isFlipped)
+        console.log("isFlipped for " + props.place + ": " + isFlipped);
+        ReactGA.event({
+            category: 'Clicks',
+            action: 'Click',
+            label: "Flipcard for " + props.place,
+        });
       };
 
     const backgroundImageStyle = {
@@ -28,7 +34,7 @@ const Flipcard = (props) => {
 
             <div className={css.cardback}>
                 <div className={css.content}>
-                    <div className={css.header}> My Responsibilities:</div>
+                    <div className={css.header}> My Accomplishments:</div>
 
                     <div className={css.body}>
                         <div className={css.description}>

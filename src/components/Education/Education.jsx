@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { staggerChildren, staggerContainer, fadeIn, textVariant } from '../../utils/motion'
 import MDRenderer from '../MDRenderer/MDRenderer'
 
-const Expertise = () => {
+const Education = () => {
   return (
     <motion.section
     variants= {staggerContainer}
@@ -44,8 +44,8 @@ const Expertise = () => {
             className={css.rightSide}>
                 {
                 AboutMyEducation.map((paragraph, i) => {
-                    return <div className='secondaryText'>
-                                <MDRenderer key={i} markdownContent={paragraph} />
+                    return <div className='secondaryText' key={i}>
+                                <MDRenderer markdownContent={paragraph} />
                             </div>
                 })
                 }
@@ -56,4 +56,4 @@ const Expertise = () => {
   )
 }
 
-export default Expertise
+export default Education

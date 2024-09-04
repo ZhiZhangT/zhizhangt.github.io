@@ -11,7 +11,7 @@ const Works = () => {
     variants={staggerChildren}
     initial="hidden"
     whileInView="show"
-    viewport={{once: true, amount: 0.25}}
+    viewport={{once: true, amount: 0.1}}
     className={` paddings ${css.wrapper}`}>
 
         <a className='anchor' id="experience"></a>
@@ -36,6 +36,7 @@ const Works = () => {
                 className={css.progressbar}>
 
                     <motion.div variants={fadeIn("down", "tween", 2, 1.5)} className={css.line}></motion.div>
+                    <div><div className={css.circle} style={{background: "#FF5F00"}}></div></div>
                     <div><div className={css.circle} style={{background: "#1a3849"}}></div></div>
                     <div><div className={css.circle} style={{background: "#019c62"}}></div></div>
                     <div><div className={css.circle} style={{background: "#EE4D2D"}}></div></div>

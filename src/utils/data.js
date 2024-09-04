@@ -34,13 +34,28 @@ export const educationTimeline = [
 ];
 
 export const AboutMyEducation = [
-  "I am a scholar under the [SUTD Technology Entrepreneurship Programme (STEP)](https://www.sutd.edu.sg/step), a 5-year program that is giving me opportunities to study in the West- USA and East- China, while pursuing a Bachelor's and Master's degrees concurrently. I am also the inaugural recipient of the [Shopee-SUTD Scholarship](https://www.sutd.edu.sg/Admissions/Undergraduate/Scholarship/Shopee-SUTD-Scholarship)."
+  "I am a scholar under the [SUTD Technology Entrepreneurship Programme (STEP)](https://www.sutd.edu.sg/step), a 5-year program that gave me opportunities to study in the West - in San Francisco, and the East- in Hangzhou, while pursuing a Bachelor's and Master's degrees concurrently. I am also the inaugural recipient of the [Shopee-SUTD Scholarship](https://www.sutd.edu.sg/Admissions/Undergraduate/Scholarship/Shopee-SUTD-Scholarship)."
   ,
   "My research interests revolve around realizing the potentials of **AI and Big Data** in the real world. I am currently writing a thesis paper on how a data marketplace can be created where consumers can control and monetize access to their personal data, using a federated machine learning architecture.",
-  "**I'm currently looking for an internship opportunity in the Summer of 2024, as a Product Mananger or Software Engineer in the Tech space.**",
+  "**I'm currently looking for full-time opportunities starting July 2025, as a Data Scientist, ML Engineer, or Product Mananger in the Tech space.**",
 ];
 
 export const workExp = [
+  {
+    place: "Mastercard, Singapore",
+    image: "mastercard.jpeg",
+    tenure: "May 2024 - Aug 2024",
+    role: "Software Engineering Intern",
+    detail: `
+* Researched repetition penalty and prompt templates for **LLM outputs**.
+* Developed **efficient** methods to detect repetition patterns.
+* **Deployed** research work into a **RAG** product’s development cycle to strengthen **model safeguards**.
+* Leveraged MLflow to **log and automate evaluation workflows** on Databricks.
+* **Reduced inference times** through calculating the maximum batch size given the model and resources available.
+* **Shorten experiment times** by trimming the evaluation dataset.
+
+       `
+  },
   {
     place: "Zing Data, California",
     image: "zing.jpg",
@@ -60,7 +75,7 @@ export const workExp = [
     role: "Technical Program Management Intern",
     detail: `
 * Defined timelines and milestones for **Analytics and Data Engineering teams** which led to better **accountability and visibility** of their work across leadership and the organization.
-* Spearheaded **process improvements** such as automating ticket labeling in JIRA.
+* Spearheaded **process improvements**, like automating ticket labeling in JIRA.
 * Led post-mortem and retrospective discussions that helped teams **set clearer goals** for the next half of the work year.
     `
   },
@@ -70,10 +85,10 @@ export const workExp = [
     tenure: "Jun 2021 - Sep 2021",
     role: "Product Management Intern",
     detail: `
-* Wrote **product requirement documents**, planned **development timelines** with a team of developers, designers, and operators.
-* **Initiated** a new-joinee onboarding guide. 
 * Launched [Shopee Antecipa](https://seller.shopee.com.br/edu/article/10443/duvidas-frequentes-sobre-shopee-antecipa), a service that advances payments to e-commerce sellers in Brazil and **Shopee’s first financial service in Latin America** which achieved **> USD1M in revenue** in the first year.
 * PM-ed features for internal ops tools that **improved user experience and added functionality**.
+* Wrote **product requirement documents**, planned **development timelines** with a team of developers, designers, and operators.
+* **Initiated** a new-joinee onboarding guide. 
 `
   },
   {
@@ -101,6 +116,27 @@ export const workExp = [
 ];
 
 export const projects = [
+  {
+    project: "Investigating Spatial Bias in 3D Object Detection",
+    image: "./3dbias.png",
+    link: "https://github.com/ZhiZhangT/SDCoT",
+    role: "Research Engineer",
+    achievement: "Project with SUTD's Intelligent Machine Perception Lab", 
+  },
+  {
+    project: "Music Recommendation from Captions",
+    image: "./cds.png",
+    link: "https://docs.google.com/presentation/d/1-KKgn1c1dYMEYsxGov-U2oFChGQmejzlKda7lJijR9U/edit?usp=sharing",
+    role: "Data Scientist + ML Engineer",
+    achievement: "Top 3 Project for Computational Data Science Course", 
+  },
+  {
+    project: "Exploratory Price Analysis of Singapore's Public Housing Market",
+    image: "./hdb.gif",
+    link: "https://github.com/ZhiZhangT/r-finalproject",
+    role: "Data Analyst",
+    achievement: "Project for Data Analytics with R Course", 
+  },
   {
     project: "MePart",
     image: "./mepart.png",

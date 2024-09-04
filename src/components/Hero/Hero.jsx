@@ -54,7 +54,7 @@ const Hero = () => {
 
             <div className={css.lowerElements}>
                 <div className={css.experience}>
-                    <div className="primaryText">24</div>
+                    <div className="primaryText">25</div>
                     <div className="secondaryText">
                         <div>Years</div>
                         <div>Old</div>

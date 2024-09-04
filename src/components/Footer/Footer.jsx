@@ -4,6 +4,7 @@ import css from "./Footer.module.scss";
 import {motion} from 'framer-motion';
 import ContactDropdown from "../ContactDropdown/ContactDropdown";
 import MDRenderer from '../MDRenderer/MDRenderer';
+import { handleSocialClick } from "../../utils/analytics_calls";
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
             and achieve amazing things together.
           </span>
           <span className="primaryText2">
-            Start by <a href="https://www.linkedin.com/in/zhizhangtee/" target="_blank">connecting!</a>
+            Start by <a href="https://www.linkedin.com/in/zhizhangtee/" target="_blank" onClick={() => handleSocialClick("LinkedIn")}>connecting!</a>
           </span>
           
         </div>
@@ -46,7 +47,7 @@ const Footer = () => {
       <div className={css.bottom}>
           <p className={css.footer}>Credits to ZAINKEEPSCODE's {' '}<a href="https://www.youtube.com/watch?v=Pu9I33nDeBk" target="_blank">YouTube tutorial</a>{' '}which I learned from and followed along at the start of this project.</p>
           <br/>
-          <p className={css.footer}>© 2023 Tee Zhi Zhang, Singapore</p>
+          <p className={css.footer}>© 2024 Tee Zhi Zhang, Singapore</p>
       </div>
 
     </motion.section>

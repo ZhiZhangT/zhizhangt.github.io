@@ -6,10 +6,17 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Experience from "./components/Experience/Experience";
 import css from './styles/app.module.scss';
 import MDRenderer from "./components/MDRenderer/MDRenderer";
-
-
+import React, { useEffect } from 'react';
+import ReactGA from "react-ga4";
 
 const App = () => {
+
+  useEffect(() => {
+    ReactGA.initialize("G-NP2C3XWN1J");
+    // Send pageview with a custom path
+    ReactGA.send({ hitType: "pageview", page: "/homepage", title: "Home Page" });
+    }, [])
+
   return <div className={`bg-primary ${css.container}`}>
     <Header/>
     <Hero/>
