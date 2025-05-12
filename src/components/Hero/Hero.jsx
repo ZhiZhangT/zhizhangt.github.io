@@ -54,7 +54,7 @@ const Hero = () => {
 
             <div className={css.lowerElements}>
                 <div className={css.experience}>
-                    <div className="primaryText">25</div>
+                    <div className="primaryText">26</div>
                     <div className="secondaryText">
                         <div>Years</div>
                         <div>Old</div>
@@ -63,8 +63,8 @@ const Hero = () => {
                 <div className={css.certificate}>
                     <BiBookHeart size='60' />
                     <span className='secondaryText'>Data & AI</span>
-                    <span className='secondaryText'>Product Management</span>
                     <span className='secondaryText'> Software Development</span>
+                    <span className='secondaryText'>Product Management</span>
                 </div>
             </div>
         </motion.div>

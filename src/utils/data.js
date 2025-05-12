@@ -117,6 +117,13 @@ export const workExp = [
 
 export const projects = [
   {
+    project: "MathFoundry: Retrieval Augmented Generation and Evaluation of Math Problems",
+    image: "./mathfoundry.png",
+    link: "https://github.com/ZhiZhangT/eduRAG/tree/main",
+    role: "LLM Engineer & Researcher",
+    achievement: "Project for Information Retrieval Course", 
+  },
+  {
     project: "Investigating Spatial Bias in 3D Object Detection",
     image: "./3dbias.png",
     link: "https://github.com/ZhiZhangT/SDCoT",
@@ -146,7 +153,7 @@ export const projects = [
   },
   {
     project: "Expanding Access to the Affordable Connectivity Program",
-    image: "./pcsberkeley.jpg",
+    image: "./pcs.webp",
     link: "https://medium.com/@pcsberkeley/invisible-health-impacts-of-covid-telehealth-and-the-acp-c53d957bf364",
     role: "Data Analyst + Researcher",
     achievement: "Adopted by Link-Health", 
