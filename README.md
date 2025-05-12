@@ -9,6 +9,9 @@ If you have comments or feedback, feel free to reach out to me via:
 
 Please do a self-introduction when reaching out, so I know where you found me from. Cheers!
 
+##### Note to self:
+* Push to "master branch" and run "npm run deploy" to deploy to GitHub Pages.
+
 ##### This website was made from ZAINKEEPCODE's YouTube Tutorial on building a Portfolio Website on React:
   * https://www.youtube.com/watch?v=Pu9I33nDeBk
   * https://youtubebinjanportfolio.pages.dev
