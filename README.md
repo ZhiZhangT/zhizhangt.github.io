@@ -4,7 +4,7 @@ Welcome! This is the repository for my personal website, if you wish to visit th
 
 If you have comments or feedback, feel free to reach out to me via:
   * [LinkedIn](https://www.linkedin.com/in/zhizhangtee/)
-  * [Email](mailto:zhizhang_tee@mymail.sutd.edu.sg)
+  * [Email](mailto:zztee24@gmail.com)
   * [Telegram](https://t.me/teezz)
 
 Please do a self-introduction when reaching out, so I know where you found me from. Cheers!
